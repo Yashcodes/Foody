@@ -10,7 +10,6 @@ html {
   scroll-padding-top: 6rem;
 }
 
-
 /* body {
   background-color: rgb(234, 255, 255);
 } */
@@ -58,6 +57,14 @@ header #menu-bar {
   header #menu-bar {
     margin: 0px 24px;
   }
+  body{
+    text-align: center;
+  }
+  .order-container .order-img{
+    display: none;
+  }
+
+
 }
 
 header .logo-link {
@@ -351,11 +358,11 @@ header .logo-link {
   resize: none;
 }
 
-.media-icons{
+.media-links{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 18px;
 }
 
 .footer-links{
@@ -363,4 +370,9 @@ header .logo-link {
   color: white;
   padding-left: 22px;
   padding-right: 22px;
+  /* flex-grow: 1; */
+}
+
+.footer{
+  padding: 22px 0px 22px 0px;
 }
