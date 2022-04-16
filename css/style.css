@@ -64,7 +64,9 @@ header #menu-bar {
     display: none;
   }
 
-
+  .testimonial-section .testimonial .upper-section{
+    flex-direction: column;
+  }
 }
 
 header .logo-link {
@@ -281,8 +283,6 @@ header .logo-link {
   align-items: center;
 }
 
-
-
 .upper-section .profile .profile-img{
   height: 54px;
   border-radius: 50%;
@@ -313,11 +313,6 @@ header .logo-link {
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
 
 .order-container{
   display: flex;
