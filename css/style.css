@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
@@ -10,9 +12,10 @@ html {
   scroll-padding-top: 6rem;
 }
 
-/* body {
-  background-color: rgb(234, 255, 255);
-} */
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -69,6 +72,28 @@ header #menu-bar {
   }
 }
 
+.navbar-toggler, .navbar-toggler-icon{
+  display: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler, .navbar-toggler-icon{
+      display: inline-block;
+  }
+
+  .navbar-menus{
+      display: none;
+  }
+
+  .navigation-panel{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+}
+
 header .logo-link {
   text-decoration: none;
   color: blue;
@@ -78,6 +103,16 @@ header .logo-link {
   box-sizing: border-box;
   box-shadow: 12px gray;
 }
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: gray;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
 
 .nav-list {
   display: flex;
@@ -145,8 +180,8 @@ header .logo-link {
 
 .section-heading {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .section-heading span {
@@ -275,7 +310,8 @@ header .logo-link {
 .testimonial-section{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 22px;
 }
 
 .testimonial-section .testimonial .upper-section{
